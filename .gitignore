@@ -3,3 +3,4 @@ pnpm-lock.yaml
 .DS_Store
 tsup.config.ts
 .npmignore
+dist

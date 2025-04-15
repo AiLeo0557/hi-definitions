@@ -1,6 +1,6 @@
 {
   "name": "hi-definitions",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "description": "",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -21,7 +21,8 @@
     "hi-utils-pro": "^1.0.3",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
-    "tsup": "^8.4.0"
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.3"
   },
   "dependencies": {
     "hi-guardian": "^1.0.4"

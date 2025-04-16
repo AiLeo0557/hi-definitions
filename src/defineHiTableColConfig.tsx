@@ -12,7 +12,7 @@ export function defineHiTableColConfig(
   columns_data: HiTableColOptions[],
   page_state?: Record<string, any>,
   page_states?: Record<string, any>
-) {
+): HiTableColElOptions[] {
   return columns_data.map((row: HiTableColOptions): HiTableColElOptions => {
     const [prop, label, minWidth, align, f_p, sub_columns, tip, sortable] = row;
     const column_row: HiTableColElOptions = {

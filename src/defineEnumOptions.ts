@@ -10,7 +10,7 @@ export function defineEnumOptions(codeType: string, alias_str?: string): HiSelec
   return {
     alias,
     args: [
-      'engine-bill/combox/queryFsApdEnums',
+      Reflect.get((import.meta as any).env, 'VITE_ENUM_API'),
       {
         codeType
       },

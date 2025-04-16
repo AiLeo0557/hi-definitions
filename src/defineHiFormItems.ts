@@ -99,7 +99,9 @@ export type HiFormItemsConfig = {
  * @param config 表单项配置JSON文件
  * @returns [HiFormItemOption[], Record<string, any>] 表单项配置和表单数据
  */
-export const defineHiFormItems = (config: HiFormItemsConfig) => {
+export const defineHiFormItems = (
+  config: HiFormItemsConfig
+): [Record<string, any>, HiFormItemOption<FormElementOption>[]] => {
   const formItems: HiFormItemOption<FormElementOption>[] = []
   const formData = {}
   Object.entries(config).forEach(([tag, items]: [string, Array<HiFormItemConfigOptions<FormItemOption>>]) => {

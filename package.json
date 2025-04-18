@@ -1,11 +1,11 @@
 {
   "name": "hi-definitions",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "test": "jest",
+    "test": "vitest",
     "build": "tsup"
   },
   "devDependencies": {
@@ -21,8 +21,11 @@
     "hi-utils-pro": "^1.0.3",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
+    "ts-node": "^10.9.2",
     "tsup": "^8.4.0",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.1",
+    "vue": "^3.5.13"
   },
   "dependencies": {
     "hi-guardian": "^1.0.4"

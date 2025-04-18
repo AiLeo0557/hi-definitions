@@ -25,6 +25,7 @@ export function defineHiTableActionConfig(
   relied: boolean,
   title: string,
   width: number,
+  height: number,
   labelWidth: number,
   defaultSpan: number,
   table_data_excute_args: HiRequestArgument<any>
@@ -39,6 +40,7 @@ export function defineHiTableActionConfig(
       dialog_config: {
         title,
         width,
+        height,
         labelWidth,
         defaultSpan
       },

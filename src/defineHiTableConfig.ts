@@ -1,7 +1,8 @@
 import { reactive, Ref, ref, watch } from "@vue/runtime-core"
 import { defineHiTableColConfig, HiTableColElOptions, type HiTableColOptions } from "./defineHiTableColConfig"
-import { getFieldValueByPath, type HiRequestArgument } from "hi-utils-pro"
+import { getFieldValueByPath } from "hi-utils-pro"
 import { defineHiFormItems, FormElementOption, HiFormItemOption } from "./defineHiFormItems"
+import { type HiRequestArgument } from "hi-http"
 
 export interface HiFormConfig {
   inline: boolean // 是否行内表单

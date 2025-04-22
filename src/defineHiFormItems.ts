@@ -1,5 +1,5 @@
 import { reactive } from '@vue/reactivity';
-import { type HiRequestArgument, isHiRequestArgument } from 'hi-utils-pro'
+import { type HiRequestArgument, isHiRequestArgument } from 'hi-http'
 import { type HiInputElOption, type HiInputOption, type MoreOptionConfig, defineHiInputConfig } from './defineHiInputConfig';
 import { type HiSelectElOption, type HiSelectOption, defineHiSelectConfig } from './defineHiSelectConfig';
 import { type DateFormatConfig, type HiDateElOption, type HiDateOption, defineHiDateConfig } from './defineHiDateConfig';

@@ -1,4 +1,4 @@
-import { HiRequestArgument } from "hi-utils-pro"
+import { type HiRequestArgument } from "hi-http"
 import type { DefaultValueConfig, HiFormItemOption, VisibleConfig } from "./defineHiFormItems"
 import { isDefaultValueConfig } from './defineHiFormItems'
 import { isNull, isPrimitive, isUndefined, isBoolean, isStrictObject } from "hi-datatype-operation"

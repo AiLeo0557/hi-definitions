@@ -19,6 +19,7 @@
     "element-plus": "^2.9.8",
     "hi-datatype-operation": "^1.0.5",
     "hi-hooks": "^1.0.6",
+    "hi-http": "^1.0.4",
     "hi-utils-pro": "^1.0.8",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
@@ -38,6 +39,7 @@
     "element-plus": "^2.9.7",
     "hi-datatype-operation": "^1.0.5",
     "hi-hooks": "^1.0.6",
+    "hi-http": "^1.0.4",
     "hi-utils-pro": "^1.0.1"
   },
   "type": "module",

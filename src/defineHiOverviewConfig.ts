@@ -1,7 +1,6 @@
 import { computed, reactive } from "@vue/reactivity";
-import { HiDataSourcesApiConfig } from "./types/data";
-import { inject, watchEffect } from "@vue/runtime-core";
-import { useAsyncData } from "hi-hooks"
+import { inject } from "@vue/runtime-core";
+import { type HiDataSourcesApiConfig, useAsyncData } from "hi-hooks"
 import { getFieldValueByPath, getFormatNum, getStringBetween } from "hi-utils-pro";
 import { isNumber } from "hi-datatype-operation";
 export interface HiOverviewOptions {

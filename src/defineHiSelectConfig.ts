@@ -1,7 +1,7 @@
 import {
   isHiRequestArgument,
   type HiRequestArgument
-} from "hi-utils-pro";
+} from "hi-http";
 import {
   createArrayTypeGuard,
   createObjTypeGuard

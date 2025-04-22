@@ -1,4 +1,5 @@
-import { getStringBetween, type HiRequestArgument } from 'hi-utils-pro'
+import { getStringBetween } from 'hi-utils-pro'
+import { type HiRequestArgument } from 'hi-http'
 import { defineAccessConfig, defineDeleteConfig, defineExportConfig, defineInsertConfig, defineUpdateConfig } from './table-actions'
 import { defineImportConfig } from './table-actions/defineImportAction'
 export type HiTableActionType = 'dialog' | 'inline' | 'popconfirm' | 'router' | 'view'

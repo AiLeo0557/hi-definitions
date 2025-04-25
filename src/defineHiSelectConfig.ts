@@ -24,7 +24,6 @@ import {
   type Primitive
 } from "hi-datatype-operation";
 
-
 export interface HiSelectOptionItem {
   label: string,
   value: Primitive,

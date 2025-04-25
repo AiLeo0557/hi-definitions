@@ -17,7 +17,7 @@
     "babel-jest": "^29.7.0",
     "dayjs": "^1.11.13",
     "element-plus": "^2.9.8",
-    "hi-datatype-operation": "^1.0.5",
+    "hi-datatype-operation": "^1.0.6",
     "hi-hooks": "^1.0.6",
     "hi-http": "^1.0.4",
     "hi-utils-pro": "^1.0.8",

@@ -62,7 +62,6 @@ export interface HiFormItemOption<T> {
   onVisible?: (data?: Record<string, any>) => boolean; // 是否显示
 }
 
-
 export interface VisibleConfig {
   key: string, // 关联字段
   value: string | number | boolean, // 关联值
@@ -90,7 +89,17 @@ export type HiFormItemsConfig = {
 //   type: string, // 类型
 //   ...HiFormItemConfigOption[], // 其他配置
 // ]
-
+export interface HiFormConfig<T> {
+  inline?: boolean; // 是否行内表单
+  showSearchBtn?: boolean; // 是否显示搜索按钮
+  items: HiFormItemOption<FormElementOption>[] // 表单项配置
+  formData: T // 表单数据
+  seachBtnText?: string // 搜索按钮文本
+  labelWidth: number // 标签宽度
+  defaultSpan: number // 默认栅格数
+  onSubmit?: (data: T) => void // 提交回调
+  reFetch?: boolean // 是否重新请求数据
+}
 
 /**
  * author: 杜朝辉

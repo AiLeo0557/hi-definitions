@@ -1,20 +1,8 @@
 import { reactive, Ref, ref, watch } from "@vue/runtime-core"
 import { defineHiTableColConfig, HiTableColElOptions, type HiTableColOptions } from "./defineHiTableColConfig"
 import { getFieldValueByPath } from "hi-utils-pro"
-import { defineHiFormItems, FormElementOption, HiFormItemOption } from "./defineHiFormItems"
+import { defineHiFormItems, FormElementOption, HiFormConfig, HiFormItemOption } from "./defineHiFormItems"
 import { type HiRequestArgument } from "hi-http"
-
-export interface HiFormConfig {
-  inline: boolean // 是否行内表单
-  defaultLength: number // 默认表单项长度
-  defaultSpan: number // 默认表单项跨度
-  items: HiFormItemOption<FormElementOption>[] // 表单项
-  formData: Record<string, any> // 表单数据
-  showSearchBtn: boolean // 是否显示搜索按钮
-  reFetch: boolean // 是否重新请求
-  onSubmit: (data: Record<string, any>, searchResult?: any) => void // 提交回调
-}
-
 export interface HiTableColConfig {
   args?: HiRequestArgument<any> | null // 请求参数
   default?: HiTableColElOptions[] | null // 默认值
@@ -42,7 +30,7 @@ export interface HiTableConfig {
   tableHeight: string // 表格高度
   tableWidth: string // 表格宽度
   minHeight: string // 表格最小高度
-  searchFormConfig: HiFormConfig // 搜索表单配置
+  searchFormConfig: HiFormConfig<any> // 搜索表单配置
   columns_config: HiTableColConfig // 列配置
   data_config: HiTableColConfig // 数据配置
   chart_config?: any // 图表配置

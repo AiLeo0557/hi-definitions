@@ -94,7 +94,7 @@ export interface HiFormConfig<T> {
   showSearchBtn?: boolean; // 是否显示搜索按钮
   items: HiFormItemOption<FormElementOption>[] // 表单项配置
   formData: T // 表单数据
-  seachBtnText?: string // 搜索按钮文本
+  searchBtnText?: string // 搜索按钮文本
   labelWidth: number // 标签宽度
   defaultSpan: number // 默认栅格数
   onSubmit?: (data: T) => void // 提交回调

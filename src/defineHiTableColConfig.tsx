@@ -85,7 +85,7 @@ export interface HiTableColElOptions {
 export type HiTableColOptions = [
   prop: string, // 列属性
   label: string, // 列名
-  minWidth?: number, // 列宽
+  width?: number, // 列宽
   align?: 'left' | 'center' | 'right', // 列对齐方式
   f_p?: number | string | HiTableColFormatConfig, // 列格式化配置
   sub_columns?: HiTableColOptions[], // 子列

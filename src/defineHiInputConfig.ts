@@ -26,7 +26,7 @@ export interface MoreOptionConfig {
     }
   }
 }
-export type HiInputOption = [
+export type HiInputOptionTuple = [
   type?: string | null, // 类型
   append?: string | null, // 后缀
   disabled?: boolean | null, // 是否禁用
@@ -48,7 +48,7 @@ export interface HiInputElOption {
  * description: input 组件配置
  */
 export function defineHiInputConfig(
-  config_options: HiInputOption,
+  config_options: HiInputOptionTuple,
   setDefaultValue: (val: string | number) => void = (val: string | number) => { }
 ): HiFormItemOption<HiInputElOption> {
   const defaultConfig: HiFormItemOption<HiInputElOption> = {

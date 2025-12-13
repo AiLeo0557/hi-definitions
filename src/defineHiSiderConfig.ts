@@ -48,7 +48,7 @@ interface TreeActionItemConfig extends BaseConfig {
 function defineActionCofig(base: BaseConfig, options: TreeActionItemConfig) {
 
 }
-export function defineHiSiderConfig(options: HiSiderOptions): HiSiderActionConfig {
+export function defineHiSiderConfig(options: HiSiderOptions): HiSiderConfig {
   // return options
   const { args, attrs, actions, update_config, default_height } = options
   const [children, label, nodeKey, nodeValueKey, update_table_param_name, defaultSelectedFirstItem, default_last_leavel_id] = attrs
@@ -104,7 +104,7 @@ export function defineHiSiderConfig(options: HiSiderOptions): HiSiderActionConfi
     default_height
   }
 }
-interface HiSiderActionConfig {
+export interface HiSiderConfig {
   args?: HiRequestArgument<any>; // 请求参数
   defaultProp: {
     children: string

@@ -36,6 +36,7 @@ export interface HiTableConfig {
   chart_config?: any // 图表配置
   sorte_config?: any // 排序配置
   pagination_config?: any // 分页配置
+  layout?: 'row' | 'col' // 子表的布局
   actions_config?: HiTableActionsConfig // 操作按钮配置
 }
 

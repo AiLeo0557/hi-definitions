@@ -53,7 +53,7 @@ export const isDefaultDateValueConfig = createObjTypeGuard<DefaultDateValueConfi
   offset_amount: isNumber || isOffsetRange,
   offset_unit: isManipulateType
 })
-export type HiDateOption = [
+export type HiDateOptionTuple = [
   type: DatePickType, // 类型
   format_config?: DateFormatConfig, // 格式
   disabled_config?: boolean | disabled_date_st | null, // 禁用配置
@@ -77,7 +77,7 @@ export interface HiDateElOption {
  * description: Date 组件配置
  */
 export function defineHiDateConfig(
-  config_options: HiDateOption,
+  config_options: HiDateOptionTuple,
   setDefaultValue: (val: unknown) => void = (val) => { }
 ): HiFormItemOption<HiDateElOption> {
   const defaultConfig: HiFormItemOption<HiDateElOption> = {

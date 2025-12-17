@@ -1,4 +1,4 @@
-import { HiRequestArgument } from "hi-utils-pro";
+import { type HiRequestArgument } from "hi-http";
 import { HiTableActionType, type HiTableActionConfig } from "src/defineHiTableActionsConfig";
 /**
  * 定义table数据操作配置项

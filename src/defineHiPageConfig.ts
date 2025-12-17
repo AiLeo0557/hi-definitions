@@ -11,6 +11,7 @@ interface HiPageOption {
   overview_config?: any // 概览配置
   layout_config?: any // 布局配置
 }
+
 export function defineHiPageConfig(options: Ref<HiPageOption>) {
   const name = ref<string>();
   const tableConfig = ref<any>(null);

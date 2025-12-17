@@ -35,7 +35,7 @@ const isHiSelectionOptionItem = createObjTypeGuard<HiSelectOptionItem>({
 const isHiSelectionOptionItems = createArrayTypeGuard<HiSelectOptionItem>(isHiSelectionOptionItem);
 
 export type EnumOptionsAlias = [label: string, value: string];
-export type HiSelectOption = [
+export type HiSelectOptionTuple = [
   enum_type?: string | null, // 枚举值类型
   options_config?:
   HiRequestArgument<any> |
@@ -69,7 +69,7 @@ export interface HiSelectElOption {
  * description: Select 组件配置
  */
 export function defineHiSelectConfig(
-  config_options: HiSelectOption,
+  config_options: HiSelectOptionTuple,
   setDefaultValue: (val: unknown) => void = (val) => { }
 ): HiFormItemOption<HiSelectElOption> {
   const defaultConfig: HiFormItemOption<HiSelectElOption> = {

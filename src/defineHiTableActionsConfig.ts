@@ -30,7 +30,7 @@ export interface HiTableActionConfig {
       cancel_text: string // 取消按钮文本
       confirm_type: 'primary' | 'danger' // 确认按钮类型
       when: (data: Record<string, any>) => boolean // 提示条件
-    } | null // 提示配置
+    } // 提示配置
     /** 导入操作相关配置项 */
     show_download_btn?: boolean // 是否
     download_template_url?: string // 模版下载地址
@@ -48,12 +48,12 @@ export interface HiTableActionConfig {
   }
 }
 
-export interface HiTableActionOption {
-  items?: HiTableActionConfig[] // 操作按钮
-  [key: string]: any
+export interface HiTableActionsConfig {
+  items: HiTableActionConfig[] // 操作按钮
+  container_id?: string // 容器ID
+  items_space?: number // 操作按钮间距
 }
-
-export function defineHiTableActionsConfig(config: HiTableActionOption) {
+export function defineHiTableActionsConfig(config: HiTableActionsConfig) {
   if (config.items) {
     return config.items
   }
@@ -61,7 +61,6 @@ export function defineHiTableActionsConfig(config: HiTableActionOption) {
   const excute_keys =
     keys.filter((key: string) => key.startsWith('table_data'))
       .map((key: string) => getStringBetween(key, 'data_', '_args'))
-  console.log('excute_keys:', excute_keys)
   return excute_keys.map((key: string) => {
     let url = Reflect.get(config, `table_data_${key}_args_url`)
     if (key === 'export') {
